@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-/* Navbar Styling */
 .navbar {
     display: flex;
     align-items: center;
@@ -107,7 +106,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Content Styling */
+
 .content {
     display: flex;
     gap: 20px;
@@ -121,7 +120,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Patient List */
 .patient-list {
     width: 25%;
 }
@@ -158,9 +156,9 @@ body {
     border-radius: 50%;
 }
 
-/* Diagnosis Section */
+
 .diagnosis {
-    width: 45%; /* Increased width to 45% */
+    width: 45%; 
 }
 
 .chart h3 {
@@ -197,7 +195,7 @@ body {
     font-size: 1.2em;
 }
 
-/* Patient Details Section */
+
 .patient-details {
     width: 25%;
     display: flex;
@@ -238,7 +236,7 @@ body {
     color: #333;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .content {
         flex-direction: column;

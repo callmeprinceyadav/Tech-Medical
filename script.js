@@ -4,20 +4,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const diagnosisContainer = document.querySelector(".diagnosis .vitals");
     let bpChart;
 
-    // Initialize or update the BP chart
+    
     function updateBpChart(systolicData, diastolicData) {
         const ctx = document.getElementById("bpChart").getContext("2d");
 
-        // Destroy the previous chart instance if it exists to prevent overlapping
+        
         if (bpChart) {
             bpChart.destroy();
         }
 
-        // Create a new chart instance with updated data
+        
         bpChart = new Chart(ctx, {
             type: "line",
             data: {
-                labels: ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar"], // Example labels
+                labels: ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar"], 
                 datasets: [
                     {
                         label: "Systolic",
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Function to update patient details, BP chart, and display current BP
+    
     function displayPatientDetails(patient) {
         patientDetailsContainer.innerHTML = `
             <img src="${patient.imageUrl}" alt="${patient.name}" class="profile-pic">
@@ -67,12 +67,12 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="vital"><h4>Heart Rate</h4><p>${patient.diagnosis.heartRate}</p></div>
         `;
 
-        // Update the BP chart data
+       
         const systolicData = patient.diagnosis.systolicBP;
         const diastolicData = patient.diagnosis.diastolicBP;
         updateBpChart(systolicData, diastolicData);
 
-        // Display current systolic and diastolic values next to the chart
+        
         const currentBpContainer = document.getElementById("currentBpData");
         currentBpContainer.innerHTML = `
             <h4>Current Blood Pressure</h4>
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    // Fetch patient data from db.json
+    
     async function fetchPatientData() {
         try {
             const response = await fetch("db.json");
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Display patient list in the sidebar
+   
     function displayPatientList(patients) {
         const patientList = document.querySelector(".patient-list ul");
         patients.forEach(patient => {
@@ -107,6 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Initial fetch and display of patient data
+    
     fetchPatientData();
 });
