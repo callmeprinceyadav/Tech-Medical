@@ -1,0 +1,85 @@
+{
+    "patients": [
+        {
+            "id": 1,
+            "name": "Amit Sharma",
+            "age": 52,
+            "dob": "1972-01-15",
+            "gender": "Male",
+            "contact": "(91) 98765-43210",
+            "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D",
+            "diagnosis": {
+                "respiratoryRate": "22 bpm",
+                "temperature": "98.8°F",
+                "heartRate": "82 bpm",
+                "systolicBP": [130, 140, 160, 155, 145, 170, 160, 150],
+                "diastolicBP": [85, 90, 100, 95, 92, 105, 98, 91]
+            }
+        },
+        {
+            "id": 2,
+            "name": "Priya Iyer",
+            "age": 34,
+            "dob": "1990-06-24",
+            "gender": "Female",
+            "contact": "(91) 87654-32109",
+            "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D",
+            "diagnosis": {
+                "respiratoryRate": "20 bpm",
+                "temperature": "98.6°F",
+                "heartRate": "78 bpm",
+                "systolicBP": [110, 115, 120, 118, 125, 135, 130, 128],
+                "diastolicBP": [75, 78, 80, 76, 82, 88, 85, 79]
+            }
+        },
+        
+        {
+            "id": 4,
+            "name": "Sneha Reddy",
+            "age": 29,
+            "dob": "1995-02-10",
+            "gender": "Female",
+            "contact": "(91) 93214-76543",
+            "imageUrl": "https://thispersondoesnotexist.com/",
+            "diagnosis": {
+                "respiratoryRate": "18 bpm",
+                "temperature": "98.4°F",
+                "heartRate": "75 bpm",
+                "systolicBP": [100, 105, 110, 108, 115, 120, 118, 112],
+                "diastolicBP": [70, 72, 75, 73, 78, 80, 79, 74]
+            }
+        },
+        {
+            "id": 5,
+            "name": "Anjali Singh",
+            "age": 62,
+            "dob": "1962-09-20",
+            "gender": "Female",
+            "contact": "(91) 99876-54321",
+            "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D",
+            "diagnosis": {
+                "respiratoryRate": "19 bpm",
+                "temperature": "98.7°F",
+                "heartRate": "80 bpm",
+                "systolicBP": [150, 160, 170, 165, 155, 175, 165, 158],
+                "diastolicBP": [95, 100, 110, 105, 98, 115, 105, 100]
+            }
+        },
+        {
+            "id": 6,
+            "name": "Vikram Choudhary",
+            "age": 39,
+            "dob": "1985-12-30",
+            "gender": "Male",
+            "contact": "(91) 90123-45678",
+            "imageUrl": "https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D",
+            "diagnosis": {
+                "respiratoryRate": "21 bpm",
+                "temperature": "98.5°F",
+                "heartRate": "82 bpm",
+                "systolicBP": [120, 125, 130, 127, 135, 140, 138, 130],
+                "diastolicBP": [80, 85, 88, 86, 90, 95, 92, 87]
+            }
+        }
+    ]
+}

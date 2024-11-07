@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="navbar-logo">
+        <img src="logo.png" alt="Tech.Care Logo">
+        <h2>Tech.Care</h2>
+    </div>
+    <nav class="navbar-menu">
+        <a href="#" class="navbar-item active">Overview</a>
+        <a href="#" class="navbar-item">Patients</a>
+        <a href="#" class="navbar-item">Schedule</a>
+        <a href="#" class="navbar-item">Message</a>
+        <a href="#" class="navbar-item">Transactions</a>
+    </nav>
+    <div class="navbar-user">
+        <img src="https://thispersondoesnotexist.com/" alt="Doctor Avatar" class="user-avatar">
+        <div class="user-info">
+            <span>Dr. Jose Simmons</span>
+            <small>General Practitioner</small>
+        </div>
+        <button class="menu-icon">⋮</button>
+    </div>
+</header>
+
+<div class="dashboard">
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="header">
+            <h2>Diagnosis History</h2>
+        </header>
+
+        <!-- Patient List & Details -->
+        <section class="content">
+            <!-- Patient List -->
+            <div class="patient-list">
+                <input type="text" placeholder="Search Patient">
+                <ul></ul>
+            </div>
+
+            <!-- Diagnosis & Vital Signs -->
+            <div class="diagnosis">
+                <div class="chart">
+                    <h3>Blood Pressure</h3>
+                    <!-- Use chart.js for actual chart -->
+                    <canvas id="bpChart"></canvas>
+                    
+                </div>
+                <div class="vitals">
+                    <div class="vital">
+                        <i class="fas fa-lungs"></i>
+                        <h4>Respiratory Rate</h4>
+                        <p>20 bpm</p>
+                    </div>
+                    <div class="vital">
+                        <i class="fas fa-thermometer-half"></i>
+                        <h4>Temperature</h4>
+                        <p>98.6°F</p>
+                    </div>
+                    <div class="vital">
+                        <i class="fas fa-heartbeat"></i>
+                        <h4>Heart Rate</h4>
+                        <p>78 bpm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patient Details -->
+            <div class="patient-details"></div>
+
+            
+        </section>
+    </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
